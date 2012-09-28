@@ -10,10 +10,15 @@ Supports browsing archives (RAR/SPM/RPM/TAR/ARC/LHA/ZIP/ZOO) if
 external archive programs are available.
 
 Runtime requirements:
-  cygwin
+  libgcc1
+  libncurses10
+  libncursesw10
+  libreadline7
 
 Build requirements:
-  cygwin
+  libncurses-devel
+  libncursesw-devel
+  readline
 
 Canonical homepage:
   http://freecode.com/projects/ytree

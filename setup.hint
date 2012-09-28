@@ -1,7 +1,8 @@
-sdesc: "curses-based file manager similar to DOS Xtree(tm)"
+sdesc: "Curses-based file manager similar to DOS Xtree(tm)"
 ldesc: "A file manager that has separate panes for files and directories; you
 can select and manage files from different directories. It works on
 black and white or color terminals and is UTF-8 locales aware.
 Supports browsing archives (RAR/SPM/RPM/TAR/ARC/LHA/ZIP/ZOO) if
 external archive programs are available."
 category: Utils
+requires: libncurses10 libncursesw10 libreadline7
