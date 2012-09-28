@@ -1,0 +1,11 @@
+# See http://cygwin.com/setup.html   The 'category' can be:
+# Accessibility Admin Archive Audio Base Comm Database Devel Doc Editors
+# Games Gnome Graphics Interpreters Libs Mail Math Mingw Net Perl Python
+# Publishing Security Shells System Text Utils Web X11
+sdesc: "curses-based file manager similar to DOS Xtree(tm)"
+ldesc: "A file manager that has separate panes for files and directories; you
+can select and manage files from different directories. It works on
+black and white or color terminals and is UTF-8 locales aware.
+Supports browsing archives (RAR/SPM/RPM/TAR/ARC/LHA/ZIP/ZOO) if
+external archive programs are available."
+category: Utils
