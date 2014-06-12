@@ -11,12 +11,10 @@ external archive programs are available.
 
 Runtime requirements:
   libgcc1
-  libncurses10
   libncursesw10
   libreadline7
 
 Build requirements:
-  libncurses-devel
   libncursesw-devel
   readline
 

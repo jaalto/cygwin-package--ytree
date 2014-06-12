@@ -5,4 +5,4 @@ black and white or color terminals and is UTF-8 locales aware.
 Supports browsing archives (RAR/SPM/RPM/TAR/ARC/LHA/ZIP/ZOO) if
 external archive programs are available."
 category: Utils
-requires: libncurses10 libncursesw10 libreadline7
+requires: libncursesw10 libreadline7
