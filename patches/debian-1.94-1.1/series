@@ -1,4 +1,6 @@
+../00debian-pre/Makefile-1.97--1.94.diff
 01_makefile.diff
 02_profile.diff
 03_manpages.diff
 04_curses_path
+
