@@ -1,0 +1,7 @@
+Note 2014-06-15
+
+Debian package is in version 1.94 but those patches apply fine to 1.97
+provided the Makefile is restored to 1.94.
+
+The CYGWIN-PATCHES/patches/debian-1.94-1.1/series has been edited to
+include patch found from this directory.
