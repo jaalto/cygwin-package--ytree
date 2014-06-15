@@ -1,0 +1,13 @@
+Index: ytree-1.94/ytree.h
+===================================================================
+--- ytree-1.94.orig/ytree.h	2010-02-28 13:15:46.000000000 +0000
++++ ytree-1.94/ytree.h	2011-12-15 16:30:34.795251094 +0000
+@@ -39,7 +39,7 @@
+ #endif
+ #else
+ #ifndef HAVE_CURSES
+-#include <curses.h>
++#include <ncursesw/curses.h>
+ #endif
+ #endif /* __FreeBSD__ */
+ #endif /* ultrix */

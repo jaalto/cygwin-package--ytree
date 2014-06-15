@@ -1,0 +1,13 @@
+Run mailcap on USERVIEW. Patch implemented by Barry deFreese
+<bddebian@comcast.net>  Tue, 08 Apr 2008 13:58:28.
+--- ytree-1.86.orig/profile.c
++++ ytree-1.86/profile.c
+@@ -87,7 +87,7 @@
+   { "TARLIST",      DEFAULT_TARLIST,      NULL,     NULL },
+   { "TREEDEPTH",    DEFAULT_TREEDEPTH,    NULL,     NULL },
+   { "UNCOMPRESS",   DEFAULT_UNCOMPRESS,   NULL,     NULL },
+-  { "USERVIEW",     "",                   NULL,     NULL },
++  { "USERVIEW",     "run-mailcap",        NULL,     NULL },
+   { "ZIPEXPAND",    DEFAULT_ZIPEXPAND,    NULL,     NULL },
+   { "ZIPLIST",      DEFAULT_ZIPLIST,      NULL,     NULL },
+   { "ZOOEXPAND",    DEFAULT_ZOOEXPAND,    NULL,     NULL },

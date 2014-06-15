@@ -1,0 +1,54 @@
+Index: ytree-1.94/Makefile
+===================================================================
+--- ytree-1.94.orig/Makefile	2010-06-20 14:25:58.000000000 +0000
++++ ytree-1.94/Makefile	2010-06-20 14:40:38.000000000 +0000
+@@ -15,7 +15,7 @@
+ 
+ DESTDIR     = /usr
+ 
+-ADD_CFLAGS  = -O # -DVI_KEYS
++ADD_CFLAGS  = -O2 -g -Wall # -DVI_KEYS
+ 
+ BINDIR      = $(DESTDIR)/bin
+ MANDIR      = $(DESTDIR)/share/man/man1
+@@ -29,21 +29,21 @@
+ # Attention Slackware users: 
+ #           Maybe you have to change the MANDIR to $(DESTDIR)/man/man1
+ ###########################
+-COLOR       = -DCOLOR_SUPPORT 
+-CLOCK	    = -DCLOCK_SUPPORT # Experimental!
+-READLINE    = -DREADLINE_SUPPORT
+-CFLAGS      += -D_GNU_SOURCE $(COLOR) $(CLOCK) $(READLINE)
+-LDFLAGS     += -lncurses -lreadline
++#COLOR       = -DCOLOR_SUPPORT
++#CLOCK	    = -DCLOCK_SUPPORT # Experimental!
++#READLINE    = -DREADLINE_SUPPORT
++#CFLAGS      += -D_GNU_SOURCE $(COLOR) $(CLOCK) $(READLINE)
++#LDFLAGS     += -lncurses -lreadline
+ 
+ ###########################
+ # LINUX with Wide character support (testet with ncurses 5.4)
+ # Requires libncursesw!
+ ###########################
+-#COLOR       = -DCOLOR_SUPPORT 
+-##CLOCK	    = -DCLOCK_SUPPORT # Experimental!
+-#READLINE    = -DREADLINE_SUPPORT
+-#CFLAGS      = -D_GNU_SOURCE -DWITH_UTF8 $(ADD_CFLAGS) $(COLOR) $(CLOCK) $(READLINE)
+-#LDFLAGS     = -lncursesw -lreadline
++COLOR       = -DCOLOR_SUPPORT
++#CLOCK	    = -DCLOCK_SUPPORT # Experimental!
++READLINE    = -DREADLINE_SUPPORT
++CFLAGS      = -D_GNU_SOURCE -DWITH_UTF8 $(ADD_CFLAGS) $(COLOR) $(CLOCK) $(READLINE)
++LDFLAGS     = -lncursesw -lreadline
+ 
+ ###########################
+ # LINUX without libreadline (testet with ncurses 5.2)
+@@ -229,7 +229,7 @@
+ 		gzip -9c ytree.1 > ytree.1.gz
+ 		if [ -d $(MANDIR) ]; then install -m 0644 ytree.1.gz  $(MANDIR)/; fi
+ 		gzip -9c ytree.1.es > ytree.1.es.gz
+-		if [ -d $(MANESDIR) ]; then install -m 0644 ytree.1.es.gz $(MANESDIR)/; fi
++		if [ -d $(MANESDIR) ]; then install -m 0644 ytree.1.es.gz $(MANESDIR)/ytree.1.gz; fi
+ 
+ clean:
+ 		rm -f core *.o *~ *.orig *.bak 

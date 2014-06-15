@@ -1,0 +1,66 @@
+Fix typos, hyphens, and manpage section. Patch implemented by Barry deFreese
+<bddebian@comcast.net> Tue, 08 Apr 2008 13:58:28.
+Index: ytree-1.94/ytree.1
+===================================================================
+--- ytree-1.94.orig/ytree.1	2010-06-20 13:56:25.000000000 +0000
++++ ytree-1.94/ytree.1	2010-06-20 13:56:25.000000000 +0000
+@@ -1,5 +1,5 @@
+ .\" extracted from ytree.doc 26 November 1996 by cmt2doc.pl
+-.TH YTREE 1L "21 March 2004" " " "LOCAL COMMANDS"
++.TH YTREE 1 "21 March 2004" " " "LOCAL COMMANDS"
+ .PD .8v
+ .SH NAME
+ .nf
+@@ -8,7 +8,7 @@
+ 
+ .SH SYNOPSYS
+ 
+-ytree [\fIarchiv file\fR|\fIdirectory\fR]
++ytree [\fIarchive\fR \fIfile\fR|\fIdirectory\fR]
+ 
+ .SH DESCRIPTION
+ 
+@@ -368,9 +368,9 @@
+ .nf 
+ \fB [VIEWER]
+ \fB .jpg,.gif,.bmp,.tif,.ppm,.xpm=xv
+-\fB .1,.2,.3,.4,.5,.6,.7,.8,.n=nroff -man | less
++\fB .1,.2,.3,.4,.5,.6,.7,.8,.n=nroff \-man | less
+ \fB .ps=ghostview
+-\fB .mid,.MID=playmidi -e
++\fB .mid,.MID=playmidi \-e
+ \fB .wav,.WAV=splay
+ \fB .au=auplay
+ \fB .avi,.mpg,.mov=xanim
+Index: ytree-1.94/ytree.1.es
+===================================================================
+--- ytree-1.94.orig/ytree.1.es	2010-06-20 13:56:25.000000000 +0000
++++ ytree-1.94/ytree.1.es	2010-06-20 14:03:41.000000000 +0000
+@@ -1,5 +1,5 @@
+ .\" extracted from ytree.doc 26 November 1996 by cmt2doc.pl
+-.TH YTREE 1 "19 de Febrero 1999" " " "PROGRAMAS"
++.TH YTREE 1 "19 de Febrero 1999"  "  "  "PROGRAMAS"
+ .PD .8v
+ .SH NOMBRE
+ .nf
+@@ -8,7 +8,7 @@
+ 
+ .SH SINOPSIS
+ 
+-ytree [\fInómbre de archivo \f | \fIdirectorio\fR]
++ytree [\fInómbre de archivo\fR|\fIdirectorio\fR]
+ 
+ .SH DESCRIPCION
+ 
+@@ -345,9 +345,9 @@
+ .nf 
+ \fB [VIEWER]
+ \fB .jpg,.gif,.bmp,.tif,.ppm,.xpm=xv
+-\fB .1,.2,.3,.4,.5,.6,.7,.8,.n=nroff -man | less
++\fB .1,.2,.3,.4,.5,.6,.7,.8,.n=nroff \-man | less
+ \fB .ps=ghostview
+-\fB .mid,.MID=playmidi -e
++\fB .mid,.MID=playmidi \-e
+ \fB .wav,.WAV=splay
+ \fB .au=auplay
+ \fB .avi,.mpg,.mov=xanim
